@@ -9,12 +9,12 @@
 <%= form_with(url: movie_path(@the_movie), method: :patch) do%>
 
   <div>
-    <%= label_tag :title, "Title"%>
+    <%= label_tag :title%>
     <%= text_field_tag :title, @the_movie.title, {id: "title"}%>
   </div>
 
   <div>
-    <%= label_tag :description, "Description"%>
+    <%= label_tag :description%>
     <%= text_area_tag :description, @the_movie.description, {id: "description", rows: "3"}%>
   </div>
 
