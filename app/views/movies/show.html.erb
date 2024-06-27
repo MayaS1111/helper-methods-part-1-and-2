@@ -6,9 +6,7 @@
 
     <div>
       <div>
-        <a href="<%= movies_path %>">
-          Go back
-        </a>
+        <%= link_to "Go back", movies_path%>
       </div>
 
       <div>
@@ -21,6 +19,7 @@
         <a href="<%= movie_path(@the_movie) %>" data-turbo-method="delete">
           Delete movie
         </a>
+        <%# <%= link_to "Delete movie", movie_path(@the_movie)%> %>
       </div>
     </div>
 
