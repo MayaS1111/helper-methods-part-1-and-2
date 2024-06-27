@@ -60,6 +60,6 @@ class MoviesController < ApplicationController
 
     movie.destroy
 
-    redirect_to movie _url, :notice => "Movie deleted successfully."  
+    redirect_to movies_url, :notice => "Movie deleted successfully."  
   end
 end
